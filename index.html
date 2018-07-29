@@ -1,8 +1,15 @@
 <html>
     <body>
         <h1>hello world</h1>
-        <input placeholder="name"></input> 
-        <input type="button" value="watch video"></input> 
+        <input id="userName" placeholder="name"></input> 
+        <input type="button" value="open" onclick="sayHello()"></input> 
 
     </body>
+    <script>
+        function sayHello() {
+            let dynamicValue=document.getElementById('userName').value;
+            let message=`hello ${dynamicValue}`;
+            alert(message);
+        }
+    </script>
 </html>
